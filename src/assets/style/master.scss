@@ -1,0 +1,182 @@
+*{
+  box-sizing: border-box;
+  height: auto;
+  font-size: 14px;
+  cursor: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  overflow: hidden;
+  
+  -webkit-user-select: none;
+}
+
+body{
+  padding: 10px;
+  background: url("~@/assets/img/tree_30.png") center center no-repeat #343434;
+}
+
+button, input, select{
+  outline: none;
+  border-width: 0;
+}
+
+ul,ol,li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span, a{
+  display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.auto-fill{
+  flex: 1.0;
+}
+
+@mixin box{
+  display: flex;
+  flex-wrap: nowrap;
+}
+@mixin box-hori{
+  @include box;
+  width: 100%;
+  flex-flow: row nowrap;
+}
+@mixin box-hori-left{
+  @include box-hori;
+  justify-content: flex-start;
+}
+@mixin box-hori-left-top{
+  @include box-hori-left;
+  align-items: flex-start;
+}
+@mixin box-hori-left-middle{
+  @include box-hori-left;
+  align-items: center;
+}
+@mixin box-hori-left-bottom{
+  @include box-hori-left;
+  align-items: flex-end;
+}
+
+@mixin box-hori-center{
+  @include box-hori;
+  justify-content: center;
+}
+@mixin box-hori-center-top{
+  @include box-hori-center;
+  align-items: flex-start;
+}
+@mixin box-hori-center-middle{
+  @include box-hori-center;
+  align-items: center;
+}
+@mixin box-hori-center-bottom{
+  @include box-hori-center;
+  align-items: flex-end;
+}
+
+@mixin box-hori-right{
+  @include box-hori;
+  justify-content: flex-end;
+}
+@mixin box-hori-right-top{
+  @include box-hori-right;
+  align-items: flex-start;
+}
+@mixin box-hori-right-middle{
+  @include box-hori-right;
+  align-items: center;
+}
+@mixin box-hori-right-bottom{
+  @include box-hori-right;
+  align-items: flex-end;
+}
+
+
+@mixin box-vert{
+  @include box;
+  flex-flow: column nowrap;
+}
+@mixin box-vert-left{
+  @include box-vert;
+  width: 100%;
+  align-items: flex-start;
+}
+@mixin box-vert-left-top{
+  @include box-vert-left;
+  justify-content: flex-start;
+}
+@mixin box-vert-left-middle{
+  @include box-vert-left;
+  justify-content: center;
+}
+@mixin box-vert-left-bottom{
+  @include box-vert-left;
+  justify-content: flex-end;
+}
+
+@mixin box-vert-center{
+  @include box-vert;
+  align-items: center;
+}
+@mixin box-vert-center-top{
+  @include box-vert-center;
+  justify-content: flex-start;
+}
+@mixin box-vert-center-middle{
+  @include box-vert-center;
+  justify-content: center;
+}
+@mixin box-vert-center-bottom{
+  @include box-vert-center;
+  justify-content: flex-end;
+}
+
+@mixin box-vert-right{
+  @include box-vert;
+  align-items: flex-end;
+}
+@mixin box-vert-right-top{
+  @include box-vert-right;
+  justify-content: flex-start;
+}
+@mixin box-vert-right-middle{
+  @include box-vert-right;
+  justify-content: center;
+}
+@mixin box-vert-right-bottom{
+  @include box-vert-right;
+  justify-content: flex-end;
+}
+
+.ani-300{transition: all .3s;}
+.ani-600{transition: all .6s;}
+
+.f12{font-size: 12px;}
+.f16{font-size: 16px;}
+
+/*.win-masker{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(255,255,255,0);
+  top: 0;
+  left: 0;
+}*/
+
+
+
