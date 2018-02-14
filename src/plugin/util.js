@@ -11,7 +11,6 @@ function openWin(param){
   }
 }
 
-
 export default {
   openWin
 }
