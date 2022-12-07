@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "element-ui": "^2.2.0",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "mysql": "^2.15.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
